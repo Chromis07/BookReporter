@@ -39,7 +39,6 @@ class Review(models.Model):
     # review objects 구분은 어쩌지...
 
 
-
 # 책 인용구
 class Quote(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
