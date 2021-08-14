@@ -43,7 +43,7 @@ class Review(models.Model):
 class Quote(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     page = models.IntegerField() # 페이지 숫자형, 순차별로 출력하기 위해 interger 사용
-    phrase = models.TextField(verbose_name="인용구")
+    phrase = models.TextField(verbose_name="책 문구")
 
     def __str__(self):
         return f"{self.book}, p.{self.page}"
